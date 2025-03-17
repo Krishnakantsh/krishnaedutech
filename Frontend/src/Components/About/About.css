@@ -1,0 +1,94 @@
+/* top-[5vw] left-[10vw]  */
+
+@keyframes animecard1 {
+  0%{
+    top:5vw;
+    left:10vw;
+  }
+  25%{
+     top: 1.5vw;
+     left : 9vw;
+  }
+  50%{
+     top:2vw;
+     left : 10vw;
+  }
+  75%{
+      top: 1.5vw;
+     left : 9vw;
+  }
+  100%{
+     top:5vw;
+     left:10vw;
+  }
+}
+
+@keyframes animecard2 {
+  0%{
+    top:5vw;
+    left:10vw;
+  }
+  25%{
+     top: 4vw;
+     left : 7vw;
+  }
+  50%{
+     top:5vw;
+     left : 3vw;
+  }
+  75%{
+      top: 6vw;
+     left : 5vw;
+  }
+  100%{
+     top:5vw;
+     left:10vw;
+  }
+}
+
+@keyframes animecard3 {
+  0%{
+    top:5vw;
+    left:10vw;
+  }
+  25%{
+     top: 6vw;
+     left : 10.5vw;
+  }
+  50%{
+     top:7vw;
+     left : 11vw;
+  }
+  75%{
+      top: 8vw;
+     left : 12vw;
+  }
+  100%{
+     top:5vw;
+     left:10vw;
+  }
+}
+
+
+@keyframes animecard4 {
+  0%{
+    top:5vw;
+    left:10vw;
+  }
+  25%{
+     top: 4vw;
+     left : 11vw;
+  }
+  50%{
+     top:5vw;
+     left : 13vw;
+  }
+  75%{
+      top: 6vw;
+     left : 14vw;
+  }
+  100%{
+     top:5vw;
+     left:10vw;
+  }
+}
