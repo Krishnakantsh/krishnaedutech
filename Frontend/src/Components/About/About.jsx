@@ -9,7 +9,7 @@ function About() {
       <div className=" flex w-full items-center justify-between  h-fit p-1 gap-10 ">
         <div
           className=" flex  items-center flex-col justify-between h-[35vw] w-[30%]  shadow-lg rounded-2xl p-5"
-          style={{ background: "rgb(255,255,255)" }}
+          style={{ backgroundColor: "rgb(128, 203, 196,0.35)" }}
         >
           <div className="flex justify-center items-center w-full  h-[50%] ">
             <div className=" flex justify-center items-center w-[15vw]  h-[15vw] rounded-full  overflow-hidden ">

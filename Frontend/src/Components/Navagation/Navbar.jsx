@@ -16,14 +16,15 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import AccountCircle from "@mui/icons-material/AccountCircle";
+
 
 const navigation = [
   { name: "HOME", href: "/api/v2m/home" },
-  { name: "MY COURSE", href: "/api/v2s/mycourse" },
+  { name: "MY COURSE", href: "/api/v2s/p/mycourse" },
   { name: "ABOUT", href: "/api/v2m/about" },
   { name: "HELP", href: "/api/v2m/help" },
   { name: "Management", href: "/api/v2m/login" },
+  { name: "Tuitor", href: "/api/v2t/login" },
 ];  
 
 export default function Navbar() {
@@ -51,8 +52,8 @@ export default function Navbar() {
 
 
 
-  const handleNotofication = () =>{
-    window.location.href = "/api/v2s/notification"
+  const handleNotification = () =>{
+    window.location.href = "/api/v2s/p/notification"
   }
 
   return (
@@ -205,9 +206,9 @@ export default function Navbar() {
           </div>
 
           {/* Notifications */}
-          <div className="flex items-center justify-center  "  onClick={ handleNotofication }  > 
+          <div className="flex items-center justify-center  "  > 
 
-            <IconButton color="inherit">
+            <IconButton color="inherit"     onClick={ handleNotification }      >
               <NotificationsIcon sx={{ color: "rgb(23,141,241)" }} />
             </IconButton>
 

@@ -2,8 +2,17 @@ import { Button, OutlinedInput } from "@mui/material";
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import { useNavigate } from "react-router-dom";
 
 function StudentSignUp() {
+
+const navigate = useNavigate();
+
+const handleLoginPageOpener = () =>{
+  navigate(`/api/v2s/login`);
+}
+
+
   return (
     <div
       className=" flex items-center justify-center  mt-17 w-full h-[43vw]"
@@ -38,36 +47,13 @@ function StudentSignUp() {
           className="flex flex-col items-center justify-between w-[60%]  h-full  rounded-2xl  p-5"
           style={{ backgroundColor: "rgb(255,255,255)" }}
         >
-          <div className=" w-full flex items-center justify-center gap-10 h-fit">
-            <div
-              className="  flex gap-3 items-center justify-center border rounded-2xl p-2  px-5 text-lg "
-              style={{ border: "2px solid rgb(128, 203, 196)" }}
-            >
-              <span>
-                <GoogleIcon color="success" />
-              </span>{" "}
-              Google
-            </div>
-            <div
-              className="  flex gap-3 items-center justify-center border rounded-2xl p-2 px-5 text-lg"
-              style={{ border: "2px solid rgb(128, 203, 196)" }}
-            >
-              <span>
-                <GitHubIcon />
-              </span>{" "}
-              Gihub
-            </div>
-          </div>
-          <h3 className="  w-full  text-center font-semibold ">
-            ---------------------- Or --------------------
-          </h3>
           <div className=" flex flex-col w-full items-center justify-between">
             <form
               action=""
               className=" flex flex-col w-full items-center justify-between gap-8"
             >
               <OutlinedInput
-                placeholder="Fullname"
+                placeholder="Student Name"
                 sx={{
                   boxShadow:
                     "inset 3px 3px 8px rgb(0,0,0,0.5), inset -4px -4px 8px rgb(255,255,255) ",
@@ -95,6 +81,17 @@ function StudentSignUp() {
                   width: "75%",
                 }}
               />
+              <OutlinedInput
+                placeholder="Age"
+                type="number"
+                sx={{
+                  boxShadow:
+                    "inset 3px 3px 8px rgb(0,0,0,0.5), inset -4px -4px 8px rgb(255,255,255) ",
+                  borderRadius: "20px",
+                  border: "none",
+                  width: "75%",
+                }}
+              />
               <Button
                 variant="contained"
                 type="submit"
@@ -108,6 +105,7 @@ function StudentSignUp() {
               </Button>
             </form>
           </div>
+          <p className=" text-lg text-semibold " style={{  color:" rgb(0,0,0)" }}  >If you have already an account <span className=" text-blue-600  cursor-pointer"  onClick={handleLoginPageOpener} >Login   </span></p>
         </div>
       </div>
     </div>

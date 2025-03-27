@@ -67,7 +67,7 @@ function Footer() {
 
 
     <div  className=' flex justify-center items-center border border-l-0 border-r-0 border-t-green-400   p-10 w-full h-fit '   >
-         <h2 className=' text-xl' style={{ textShadow:"0 0 15px rgb(255,255,255)"  }} > © <span  className='text-green-500 '  style={{ textShadow:"0 0 25px rgb(0,255,0)"  }}  >2025</span> All Right Reserved by Krishna Developer </h2>
+         <h2 className=' text-xl' style={{ textShadow:"0 0 15px rgb(255,255,255)"  }} > © <span  className='text-green-500 '  style={{ textShadow:"0 0 25px rgb(0,255,0)"  }}  >2025</span> All Right Reserved by <strong  className='text-green-400 ' >KrishnaTech Solutions</strong> </h2>
     </div>
     </>
   )

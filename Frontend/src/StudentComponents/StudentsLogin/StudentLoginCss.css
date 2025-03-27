@@ -1,0 +1,15 @@
+.loginLogoAnimation {
+  animation: loginLogoAnim 1.5s linear infinite;
+}
+
+@keyframes loginLogoAnim {
+  0% {
+    transform: rotateX(0deg)  rotateZ(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
